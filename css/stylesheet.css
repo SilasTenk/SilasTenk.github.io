@@ -1,0 +1,38 @@
+
+body {
+    background-image: url(../image/turtle-background.jpg);
+    background-repeat: repeat-x;
+    background-size: auto 100vh;
+}
+#content {
+    width: min(80vw , 1000px);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 0 auto;
+    gap: 200px;
+    margin-top: 15vmin;
+    background-color: rgba(128, 128, 128, 0.6);
+    scroll-snap-type:  x mandatory;
+    scroll-snap-stop: always;
+    scrollbar-color: #7BB8BB  rgba(128,128,128, 0.6);
+    
+}
+figure:first-of-type , figure:last-of-type {
+    scroll-snap-type: none;
+}
+figure {
+    text-align: center;
+}
+figcaption{
+    font-weight: bold;
+    font-size: clamp(14px, 2vw, 20px);
+}
+img {
+    scroll-snap-align: center;
+    width: 40vw;
+    height: auto;
+}
+
