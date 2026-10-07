@@ -16,12 +16,12 @@ body {
     margin-top: 15vmin;
     background-color: rgba(128, 128, 128, 0.6);
     scroll-snap-type:  x mandatory;
-    scroll-snap-stop: always;
     scrollbar-color: #7BB8BB  rgba(128,128,128, 0.6);
     
 }
 figure:first-of-type , figure:last-of-type {
     scroll-snap-type: none;
+    scroll-snap-stop: normal ;
 }
 figure {
     text-align: center;
@@ -34,5 +34,6 @@ img {
     scroll-snap-align: center;
     width: 40vw;
     height: auto;
+    scroll-snap-stop: always;
 }
 
